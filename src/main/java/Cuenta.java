@@ -19,7 +19,7 @@ public class Cuenta {
     return titular;
   }
 
-  public void ingresar(int cantidad) {
+  public void ingresar(double cantidad) {
     saldo = saldo + cantidad;
     System.out.println(titular.getNombre() + " ingreso " + cantidad);
   }
@@ -33,6 +33,11 @@ public class Cuenta {
     saldo = saldo - cantidad;
     System.out.println(titular.getNombre() + " retiro " + cantidad);
 
+  }
+
+  public void intereses(double interes) {
+    saldo = saldo + (saldo * interes);
+    System.out.println(titular.getNombre() + " recibe intereses de " + interes);
   }
 
 }
