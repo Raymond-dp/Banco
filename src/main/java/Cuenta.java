@@ -40,4 +40,9 @@ public class Cuenta {
     System.out.println(titular.getNombre() + " recibe intereses de " + interes);
   }
 
+  @Override
+  public String toString() {
+    return "Saldo : " + saldo + "\n" + "Titular : " + titular.toString();
+  }
+
 }

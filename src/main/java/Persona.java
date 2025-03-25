@@ -19,7 +19,13 @@ public class Persona {
   public String getId() {
     return id;
   }
+
   public double getSueldo() {
     return sueldo;
+  }
+
+  @Override
+  public String toString() {
+    return "Nombre : " + nombre + "\n" + "Id : " + id + "\n" + "Sueldo : " + sueldo;
   }
 }

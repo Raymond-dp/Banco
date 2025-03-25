@@ -14,13 +14,15 @@ public class Banco {
     c2 = new Cuenta(p2);
     Persona p3 = new Persona("Laura", "X3344324S", 1600);
     c3 = new Cuenta(p3);
-
     interes = 0.20;
     mesesPasados = 0;
+    
   }
 
   public void mostrarSituacion() {
-
+    System.out.println(c1.toString());
+    System.out.println(c2.toString());
+    System.out.println(c3.toString());
   }
 
   // aumneta un mes
