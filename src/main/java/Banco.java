@@ -19,16 +19,8 @@ public class Banco {
     mesesPasados = 0;
   }
 
-  // avanza 6 meses , luego otros 6 meses , luego 3 meses, y por
-  // ultimo 1año
-  public void iniciar() {
-    int i = 0;
-    while (i < 15) {
-      avanzarMes();
-      i++;
-    }
+  public void mostrarSituacion() {
 
-    avanzarAño();
   }
 
   // aumneta un mes
